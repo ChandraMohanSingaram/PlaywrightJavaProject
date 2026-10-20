@@ -1,2 +1,3 @@
+com\example\playwright\pages\PracticePage.class
 com\example\playwright\pages\GoogleHomePage.class
 com\example\playwright\pages\BasePage.class

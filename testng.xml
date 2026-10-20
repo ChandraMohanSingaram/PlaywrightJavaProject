@@ -9,6 +9,7 @@
     <test name="All Playwright Tests">
         <classes>
             <class name="com.example.playwright.tests.PlaywrightTestWithPageObject"/>
+            <class name="com.example.playwright.tests.PracticePageTest"/>
            <!-- <class name="com.example.playwright.tests.BasicPlaywrightTest"/>
             <class name="com.example.playwright.tests.AIEnhancedSelfHealingTest"/>
             <class name="com.example.playwright.tests.SamplePlaywrightTest"/>

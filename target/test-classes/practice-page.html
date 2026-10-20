@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 480px; }
+    label, select, input, button { display: block; margin: 10px 0; font-size: 16px; }
+    #status { margin-top: 20px; font-weight: bold; color: #0a7a2f; }
+  </style>
+</head>
+<body>
+  <h1>Practice Page</h1>
+
+  <label for="dropdown">Choose an option</label>
+  <select id="dropdown" data-testid="dropdown">
+    <option value="">Please select an option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+  <label for="name-input">Your name</label>
+  <input id="name-input" data-testid="name-input" type="text" placeholder="Enter your name">
+
+  <button id="submit-btn" data-testid="submit-btn" type="button">Submit</button>
+
+  <!-- The message appears after a short delay, to practise proper waiting -->
+  <div id="status" data-testid="status" style="display:none;"></div>
+
+  <script>
+    document.getElementById('submit-btn').addEventListener('click', function () {
+      var option = document.getElementById('dropdown').selectedOptions[0].text;
+      var name = document.getElementById('name-input').value;
+      setTimeout(function () {
+        var status = document.getElementById('status');
+        status.textContent = 'Submitted: ' + name + ' chose ' + option;
+        status.style.display = 'block';
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
