@@ -5,7 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PracticePageTest extends BaseTest {
-
+/**
+     * Test to verify that submitting a name with Option 2 works correctly.
+     */
     @Test
     public void shouldSubmitNameWithOptionTwo() {
         String optionValue = "2";
